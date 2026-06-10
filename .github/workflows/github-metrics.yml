@@ -1,0 +1,40 @@
+name: Generate GitHub Metrics
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate GitHub metrics
+        uses: lowlighter/metrics@latest
+        with:
+          user: Khatri-369
+          template: classic
+          base: header, activity, community, repositories
+          config_display: large
+          config_timezone: Asia/Kolkata
+          config_padding: 10%
+          commits_authoring_threshold: 1%
+          github_api_quota: true
+          output_action: commit
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_name: github-metrics[bot]
+          committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Update GitHub metrics" || echo "No changes to commit"
+          git push || echo "Push failed"
