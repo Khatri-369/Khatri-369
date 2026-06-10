@@ -1,11 +1,11 @@
 <div align="center">
 
 <!-- Animated Header Banner -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Om%20Khatri&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%7C%20MERN%20Stack%20%7C%20DSA%20Enthusiast&descAlignY=58&descSize=20&descColor=a78bfa"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=KHATRI%20OM%20KUMAR&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%7C%20MERN%20Stack%20%7C%20DSA%20Enthusiast&descAlignY=58&descSize=20&descColor=a78bfa"/>
 
 <!-- Animated Typing SVG -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=A78BFA&center=true&vCenter=true&random=false&width=600&lines=Hey+There!+I'm+Om+Khatri+%F0%9F%91%8B;MERN+Stack+Developer+%F0%9F%9A%80;Full-Stack+Engineer+%F0%9F%92%BB;DSA+Problem+Solver+%F0%9F%A7%A0;Building+the+Future%2C+One+Line+at+a+Time+%E2%9C%A8" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=A78BFA&center=true&vCenter=true&random=false&width=600&lines=Hey+There!+I'm+KHATRI+OM+KUMAR+%F0%9F%91%8B;MERN+Stack+Developer+%F0%9F%9A%80;Full-Stack+Engineer+%F0%9F%92%BB;DSA+Problem+Solver+%F0%9F%A7%A0;Building+the+Future%2C+One+Line+at+a+Time+%E2%9C%A8" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -30,7 +30,7 @@
 
 ```javascript
 const om = {
-  name:       "Om Khatri",
+  name:       "KHATRI OM KUMAR",
   role:       "Full-Stack Developer Intern @ Nayoda",
   location:   "India 🇮🇳",
   learning:   ["Advanced MERN Stack", "DSA", "System Design", "Backend Architecture"],
@@ -118,17 +118,6 @@ const om = {
 
 <!-- Streak Stats -->
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=Khatri-369&theme=tokyonight&hide_border=true&background=0d1117&ring=a78bfa&fire=f472b6&currStreakLabel=a78bfa" alt="GitHub Streak"/>
-
-</div>
-
----
-
-<!-- Trophies Section -->
-<div align="center">
-
-## 🏆 GitHub Trophies
-
-<img src="https://github-profile-trophy.vercel.app/?username=Khatri-369&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=7" alt="GitHub Trophies"/>
 
 </div>
 
@@ -222,14 +211,7 @@ const om = {
 
 ---
 
-<!-- Fun quote / Footer -->
 <div align="center">
-
-### 💬 Dev Quote of the Day
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote"/>
-
-<br/>
 
 <!-- Snake Contribution Animation -->
 ### 🐍 My Contributions
