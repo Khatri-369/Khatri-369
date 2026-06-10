@@ -49,51 +49,24 @@ const om = {
 
 ## 🛠️ Tech Stack & Tools
 
-</div>
-
-<div align="center">
-
-### 🎨 Frontend
+### 🎨 Frontend & Design
 <p>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"/>
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,redux,tailwind" alt="Frontend"/>
 </p>
 
-### ⚙️ Backend
+### ⚙️ Backend & Databases
 <p>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"/>
-  <img src="https://img.shields.io/badge/REST_API-FF6C37?style=for-the-badge&logo=postman&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white"/>
+  <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,mysql,firebase" alt="Backend"/>
 </p>
 
-### 🗄️ Database & Cloud
+### 🔧 Developer Tools & Platforms
 <p>
-  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"/>
-  <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
-</p>
-
-### 🔧 Dev Tools
-<p>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
-  <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white"/>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,postman,npm,vercel,linux" alt="Tools"/>
 </p>
 
 ### 🧠 Languages & DSA
 <p>
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://skillicons.dev/icons?i=cpp,java,py" alt="Languages"/>
 </p>
 
 </div>
@@ -114,10 +87,15 @@ const om = {
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Khatri-369&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=ffffff" alt="Top Languages"/>
     </td>
   </tr>
+  <tr>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Khatri-369&theme=tokyonight&layout=compact&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=ffffff" alt="WakaTime Stats"/>
+    </td>
+    <td>
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Khatri-369&theme=tokyonight&hide_border=true&background=0d1117&ring=a78bfa&fire=f472b6&currStreakLabel=a78bfa" alt="GitHub Streak"/>
+    </td>
+  </tr>
 </table>
-
-<!-- Streak Stats -->
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Khatri-369&theme=tokyonight&hide_border=true&background=0d1117&ring=a78bfa&fire=f472b6&currStreakLabel=a78bfa" alt="GitHub Streak"/>
 
 </div>
 
@@ -129,6 +107,28 @@ const om = {
 ## 📈 Contribution Graph
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Khatri-369&bg_color=0d1117&color=a78bfa&line=7c3aed&point=f472b6&area=true&hide_border=true" alt="Contribution Graph"/>
+
+</div>
+
+---
+
+<!-- 3D Contribution Calendar -->
+<div align="center">
+
+## 🗓️ 3D Contribution Calendar
+
+<img src="https://raw.githubusercontent.com/Khatri-369/Khatri-369/main/profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Calendar"/>
+
+</div>
+
+---
+
+<!-- Weekly Developer Metrics -->
+<div align="center">
+
+## ⚡ Weekly Developer Metrics
+
+<img src="https://raw.githubusercontent.com/Khatri-369/Khatri-369/main/github-metrics.svg" alt="Weekly Developer Metrics"/>
 
 </div>
 
