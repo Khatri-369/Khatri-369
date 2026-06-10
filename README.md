@@ -12,9 +12,9 @@
 
 <!-- Profile Views + Followers Badges -->
 <p>
-  <img src="https://komarev.com/ghpvc/?username=omxkhatri&label=Profile%20Views&color=7c3aed&style=for-the-badge" alt="Profile Views"/>
+  <img src="https://komarev.com/ghpvc/?username=Khatri-369&label=Profile%20Views&color=7c3aed&style=for-the-badge" alt="Profile Views"/>
   &nbsp;
-  <img src="https://img.shields.io/github/followers/omxkhatri?label=Followers&style=for-the-badge&color=7c3aed&labelColor=0d1117" alt="Followers"/>
+  <img src="https://img.shields.io/github/followers/Khatri-369?label=Followers&style=for-the-badge&color=7c3aed&labelColor=0d1117" alt="Followers"/>
 </p>
 
 </div>
@@ -108,16 +108,16 @@ const om = {
 <table>
   <tr>
     <td>
-      <img src="https://github-readme-stats.vercel.app/api?username=omxkhatri&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=a78bfa&text_color=ffffff&count_private=true" alt="GitHub Stats"/>
+      <img src="https://github-readme-stats.vercel.app/api?username=Khatri-369&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=a78bfa&text_color=ffffff&count_private=true" alt="GitHub Stats"/>
     </td>
     <td>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=omxkhatri&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=ffffff" alt="Top Languages"/>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Khatri-369&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=ffffff" alt="Top Languages"/>
     </td>
   </tr>
 </table>
 
 <!-- Streak Stats -->
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=omxkhatri&theme=tokyonight&hide_border=true&background=0d1117&ring=a78bfa&fire=f472b6&currStreakLabel=a78bfa" alt="GitHub Streak"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Khatri-369&theme=tokyonight&hide_border=true&background=0d1117&ring=a78bfa&fire=f472b6&currStreakLabel=a78bfa" alt="GitHub Streak"/>
 
 </div>
 
@@ -128,7 +128,7 @@ const om = {
 
 ## 🏆 GitHub Trophies
 
-<img src="https://github-profile-trophy.vercel.app/?username=omxkhatri&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=7" alt="GitHub Trophies"/>
+<img src="https://github-profile-trophy.vercel.app/?username=Khatri-369&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=7" alt="GitHub Trophies"/>
 
 </div>
 
@@ -139,7 +139,7 @@ const om = {
 
 ## 📈 Contribution Graph
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=omxkhatri&bg_color=0d1117&color=a78bfa&line=7c3aed&point=f472b6&area=true&hide_border=true" alt="Contribution Graph"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Khatri-369&bg_color=0d1117&color=a78bfa&line=7c3aed&point=f472b6&area=true&hide_border=true" alt="Contribution Graph"/>
 
 </div>
 
@@ -201,23 +201,19 @@ const om = {
 ## 🌐 Let's Connect!
 
 <p>
-  <a href="https://linkedin.com/in/omxkhatri" target="_blank">
+  <a href="https://www.linkedin.com/in/omkhatri369" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
   &nbsp;
-  <a href="mailto:omxkhatri@gmail.com">
+  <a href="mailto:khatriom12062007@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
   &nbsp;
-  <a href="https://twitter.com/omxkhatri" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
-  </a>
-  &nbsp;
-  <a href="https://github.com/omxkhatri" target="_blank">
+  <a href="https://github.com/Khatri-369" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
   &nbsp;
-  <a href="https://instagram.com/omxkhatri" target="_blank">
+  <a href="https://instagram.com/omkhatri_369" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
   </a>
 </p>
@@ -239,9 +235,9 @@ const om = {
 ### 🐍 My Contributions
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/omxkhatri/omxkhatri/output/github-contribution-grid-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/omxkhatri/omxkhatri/output/github-contribution-grid-snake.svg"/>
-  <img alt="github-snake" src="https://raw.githubusercontent.com/omxkhatri/omxkhatri/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Khatri-369/Khatri-369/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Khatri-369/Khatri-369/output/github-contribution-grid-snake.svg"/>
+  <img alt="github-snake" src="https://raw.githubusercontent.com/Khatri-369/Khatri-369/output/github-contribution-grid-snake-dark.svg"/>
 </picture>
 
 <br/><br/>
