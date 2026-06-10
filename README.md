@@ -1,375 +1,255 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Om Khatri — MERN Stack Developer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-<style>
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{
-    min-height:100vh;
-    background:#060914;
-    display:flex;align-items:center;justify-content:center;
-    padding:24px;
-    font-family:'Space Grotesk',sans-serif;
-  }
-  .profile-wrap{
-    position:relative;width:100%;max-width:680px;
-    min-height:720px;overflow:hidden;
-    border-radius:20px;
-    border:0.5px solid rgba(255,255,255,0.08);
-    background:rgba(8,10,20,0.9);
-    backdrop-filter:blur(12px);
-  }
-  #canvas3d{position:absolute;top:0;left:0;z-index:0;width:100%;height:100%}
-  .content{position:relative;z-index:10;padding:40px 36px 36px;color:#e8eaf6}
+<div align="center">
 
-  /* Hero */
-  .hero{display:flex;align-items:center;gap:24px;margin-bottom:28px}
-  .avatar-ring{
-    width:88px;height:88px;border-radius:50%;padding:3px;flex-shrink:0;
-    background:linear-gradient(135deg,#6C63FF,#00D4FF,#00FF9D);
-    animation:spinRing 6s linear infinite;
-  }
-  @keyframes spinRing{to{transform:rotate(360deg)}}
-  .avatar-inner{
-    width:100%;height:100%;border-radius:50%;
-    background:#0d1128;
-    display:flex;align-items:center;justify-content:center;
-    font-size:28px;font-weight:700;color:#6C63FF;
-    font-family:'Fira Code',monospace;
-    animation:spinRing 6s linear infinite reverse;
-  }
-  .hero-text h1{font-size:24px;font-weight:700;color:#fff;letter-spacing:-0.3px}
-  .hero-text .role{font-family:'Fira Code',monospace;font-size:12px;color:#00D4FF;margin-top:5px}
-  .hero-text .at{font-size:12px;color:#6a7490;margin-top:5px}
+<!-- Animated Header Banner -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Om%20Khatri&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%7C%20MERN%20Stack%20%7C%20DSA%20Enthusiast&descAlignY=58&descSize=20&descColor=a78bfa"/>
 
-  /* Badges */
-  .badge-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px}
-  .badge{
-    font-family:'Fira Code',monospace;font-size:11px;
-    padding:4px 11px;border-radius:20px;border:1px solid;font-weight:400;
-  }
-  .b-purple{color:#b89cff;border-color:#4a3a7a;background:rgba(108,99,255,0.12)}
-  .b-cyan{color:#00D4FF;border-color:#0a4a5a;background:rgba(0,212,255,0.1)}
-  .b-green{color:#00FF9D;border-color:#004a30;background:rgba(0,255,157,0.1)}
-  .b-amber{color:#ffb74d;border-color:#5a3a00;background:rgba(255,183,77,0.1)}
-  .b-pink{color:#f48fb1;border-color:#5a1a30;background:rgba(244,143,177,0.1)}
+<!-- Animated Typing SVG -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=A78BFA&center=true&vCenter=true&random=false&width=600&lines=Hey+There!+I'm+Om+Khatri+%F0%9F%91%8B;MERN+Stack+Developer+%F0%9F%9A%80;Full-Stack+Engineer+%F0%9F%92%BB;DSA+Problem+Solver+%F0%9F%A7%A0;Building+the+Future%2C+One+Line+at+a+Time+%E2%9C%A8" alt="Typing SVG" />
+</a>
 
-  /* Section label */
-  .section-label{
-    font-family:'Fira Code',monospace;font-size:10px;color:#00D4FF;
-    letter-spacing:2.5px;text-transform:uppercase;
-    margin-bottom:14px;
-    display:flex;align-items:center;gap:10px;
-  }
-  .section-label::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(0,212,255,0.35),transparent)}
+<br/>
 
-  /* Cards */
-  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:28px}
-  .card3d{
-    background:rgba(255,255,255,0.03);
-    border:0.5px solid rgba(255,255,255,0.08);
-    border-radius:14px;padding:18px;
-    transition:transform 0.35s cubic-bezier(.23,1,.32,1),box-shadow 0.35s;
-    cursor:default;
-  }
-  .card3d:hover{
-    transform:translateY(-5px) rotateX(4deg) rotateY(-2deg);
-    box-shadow:0 16px 40px rgba(108,99,255,0.22);
-    border-color:rgba(108,99,255,0.3);
-  }
-  .card-icon{font-size:24px;margin-bottom:10px}
-  .card-title{font-size:13px;font-weight:600;color:#c8d0e0;margin-bottom:5px}
-  .card-sub{font-size:11px;color:#6a7490;line-height:1.6}
+<!-- Profile Views + Followers Badges -->
+<p>
+  <img src="https://komarev.com/ghpvc/?username=omxkhatri&label=Profile%20Views&color=7c3aed&style=for-the-badge" alt="Profile Views"/>
+  &nbsp;
+  <img src="https://img.shields.io/github/followers/omxkhatri?label=Followers&style=for-the-badge&color=7c3aed&labelColor=0d1117" alt="Followers"/>
+</p>
 
-  /* Tech pills */
-  .tech-grid{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
-  .tech-pill{
-    display:flex;align-items:center;gap:6px;
-    font-family:'Fira Code',monospace;font-size:11px;
-    padding:5px 11px;border-radius:8px;
-    border:0.5px solid rgba(255,255,255,0.1);
-    background:rgba(255,255,255,0.04);color:#8892b0;
-    transition:all 0.2s;cursor:default;
-  }
-  .tech-pill:hover{background:rgba(108,99,255,0.15);border-color:#6C63FF;color:#b89cff;transform:translateY(-2px)}
-  .tech-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
-
-  /* Goals */
-  .goals-list{display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
-  .goal-item{display:flex;align-items:center;gap:12px;font-size:12px}
-  .goal-name{width:150px;flex-shrink:0;color:#c8d0e0}
-  .goal-bar-wrap{flex:1;height:4px;background:rgba(255,255,255,0.07);border-radius:2px;overflow:hidden}
-  .goal-bar{height:100%;border-radius:2px;width:0%;transition:width 1.8s cubic-bezier(.23,1,.32,1)}
-  .goal-pct{font-family:'Fira Code',monospace;font-size:10px;color:#6a7490;flex-shrink:0;width:30px;text-align:right}
-
-  /* Stats */
-  .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:28px}
-  .stat-box{
-    text-align:center;
-    background:rgba(255,255,255,0.03);
-    border:0.5px solid rgba(255,255,255,0.08);
-    border-radius:12px;padding:14px 8px;
-    transition:border-color 0.2s,transform 0.2s;
-  }
-  .stat-box:hover{border-color:rgba(108,99,255,0.3);transform:translateY(-3px)}
-  .stat-num{
-    font-size:22px;font-weight:700;font-family:'Fira Code',monospace;
-    background:linear-gradient(135deg,#6C63FF,#00D4FF);
-    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-    background-clip:text;
-  }
-  .stat-lbl{font-size:10px;color:#6a7490;margin-top:4px;letter-spacing:0.5px}
-
-  /* CTA */
-  .cta{text-align:center;padding-top:18px;border-top:0.5px solid rgba(255,255,255,0.07)}
-  .cta p{font-size:12px;color:#6a7490;font-family:'Fira Code',monospace;margin-bottom:14px}
-  .connect-btns{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
-  .cta-btn{
-    display:inline-flex;align-items:center;gap:8px;
-    font-family:'Fira Code',monospace;font-size:11px;
-    padding:9px 20px;border-radius:8px;
-    border:0.5px solid rgba(108,99,255,0.4);
-    background:rgba(108,99,255,0.15);color:#b89cff;
-    cursor:pointer;text-decoration:none;
-    transition:all 0.2s;
-  }
-  .cta-btn:hover{background:rgba(108,99,255,0.3);border-color:#6C63FF;color:#fff;transform:translateY(-2px)}
-  .cta-btn.primary{background:linear-gradient(135deg,#6C63FF,#4a54b8);color:#fff;border:none}
-  .cta-btn.primary:hover{opacity:0.88;transform:translateY(-2px)}
-
-  @media(max-width:520px){
-    .content{padding:28px 20px 24px}
-    .hero-text h1{font-size:20px}
-    .grid2{grid-template-columns:1fr}
-    .stat-row{grid-template-columns:repeat(3,1fr)}
-  }
-</style>
-</head>
-<body>
-
-<div class="profile-wrap">
-  <canvas id="canvas3d"></canvas>
-
-  <div class="content">
-    <!-- Hero -->
-    <div class="hero">
-      <div class="avatar-ring">
-        <div class="avatar-inner">OK</div>
-      </div>
-      <div class="hero-text">
-        <h1>Om Khatri</h1>
-        <div class="role">&lt; MERN Stack Developer /&gt;</div>
-        <div class="at">💼 Full-Stack Dev Intern @ Nayoda &nbsp;·&nbsp; Vadodara, IN</div>
-      </div>
-    </div>
-
-    <!-- Badges -->
-    <div class="badge-row">
-      <span class="badge b-purple">Full-Stack Dev</span>
-      <span class="badge b-cyan">MERN Stack</span>
-      <span class="badge b-green">DSA Enthusiast</span>
-      <span class="badge b-amber">Open Source</span>
-      <span class="badge b-pink">React.js</span>
-    </div>
-
-    <!-- About cards -->
-    <div class="section-label">About Me</div>
-    <div class="grid2">
-      <div class="card3d">
-        <div class="card-icon">🚀</div>
-        <div class="card-title">Current Role</div>
-        <div class="card-sub">Full-Stack Dev Intern @ Nayoda · Building production-grade MERN applications</div>
-      </div>
-      <div class="card3d">
-        <div class="card-icon">🧠</div>
-        <div class="card-title">Learning</div>
-        <div class="card-sub">Advanced MERN · DSA · Backend Architecture · System Design · Scalable Apps</div>
-      </div>
-      <div class="card3d">
-        <div class="card-icon">💬</div>
-        <div class="card-title">Ask Me About</div>
-        <div class="card-sub">React, Node, MongoDB, JWT Auth, REST APIs, Express, Problem Solving</div>
-      </div>
-      <div class="card3d">
-        <div class="card-icon">⚡</div>
-        <div class="card-title">Fun Fact</div>
-        <div class="card-sub">I enjoy transforming ideas into real-world web applications that people love</div>
-      </div>
-    </div>
-
-    <!-- Tech Stack -->
-    <div class="section-label">Tech Stack</div>
-    <div class="tech-grid">
-      <span class="tech-pill"><span class="tech-dot" style="background:#61DAFB"></span>React.js</span>
-      <span class="tech-pill"><span class="tech-dot" style="background:#339933"></span>Node.js</span>
-      <span class="tech-pill"><span class="tech-dot" style="background:#888;border:1px solid #555"></span>Express.js</span>
-      <span class="tech-pill"><span class="tech-dot" style="background:#47A248"></span>MongoDB</span>
-      <span class="tech-pill"><span class="tech-dot" style="background:#F7DF1E"></span>JavaScript</span>
-      <span class="tech-pill"><span class="tech-dot" style="background:#3178C6"></span>TypeScript</span>
-      <span class="tech-pill"><span class="tech-dot" style="background:#E34F26"></span>HTML5</span>
-      <span class="tech-pill"><span class="tech-dot" style="background:#1572B6"></span>CSS3</span>
-      <span class="tech-pill"><span class="tech-dot" style="background:#F05032"></span>Git & GitHub</span>
-      <span class="tech-pill"><span class="tech-dot" style="background:#CB3837"></span>REST APIs</span>
-      <span class="tech-pill"><span class="tech-dot" style="background:#6C63FF"></span>JWT Auth</span>
-      <span class="tech-pill"><span class="tech-dot" style="background:#00D4FF"></span>DSA & CP</span>
-    </div>
-
-    <!-- Goals -->
-    <div class="section-label">Current Goals</div>
-    <div class="goals-list">
-      <div class="goal-item">
-        <span class="goal-name">Master MERN Stack</span>
-        <div class="goal-bar-wrap"><div class="goal-bar" data-w="78" style="background:linear-gradient(90deg,#6C63FF,#00D4FF)"></div></div>
-        <span class="goal-pct">78%</span>
-      </div>
-      <div class="goal-item">
-        <span class="goal-name">Strengthen DSA</span>
-        <div class="goal-bar-wrap"><div class="goal-bar" data-w="55" style="background:linear-gradient(90deg,#00D4FF,#00FF9D)"></div></div>
-        <span class="goal-pct">55%</span>
-      </div>
-      <div class="goal-item">
-        <span class="goal-name">System Design</span>
-        <div class="goal-bar-wrap"><div class="goal-bar" data-w="35" style="background:linear-gradient(90deg,#00FF9D,#ffb74d)"></div></div>
-        <span class="goal-pct">35%</span>
-      </div>
-      <div class="goal-item">
-        <span class="goal-name">Production Apps</span>
-        <div class="goal-bar-wrap"><div class="goal-bar" data-w="62" style="background:linear-gradient(90deg,#ffb74d,#ff7043)"></div></div>
-        <span class="goal-pct">62%</span>
-      </div>
-    </div>
-
-    <!-- Stats -->
-    <div class="section-label">GitHub Stats</div>
-    <div class="stat-row">
-      <div class="stat-box"><div class="stat-num" id="commits">0</div><div class="stat-lbl">Commits</div></div>
-      <div class="stat-box"><div class="stat-num" id="repos">0</div><div class="stat-lbl">Repos</div></div>
-      <div class="stat-box"><div class="stat-num" id="prs">0</div><div class="stat-lbl">Pull Requests</div></div>
-    </div>
-
-    <!-- CTA -->
-    <div class="cta">
-      <p>⭐ Let's build something amazing together</p>
-      <div class="connect-btns">
-        <a href="https://github.com/" class="cta-btn">🐙 GitHub</a>
-        <a href="https://linkedin.com/" class="cta-btn">🔗 LinkedIn</a>
-        <a href="mailto:om@example.com" class="cta-btn primary">📬 Contact Me</a>
-      </div>
-    </div>
-  </div>
 </div>
 
-<script>
-// ── 3D Particle Canvas ──────────────────────────────────────────────
-const canvas = document.getElementById('canvas3d');
-const ctx = canvas.getContext('2d');
+---
 
-function resize(){
-  const wrap = canvas.parentElement;
-  canvas.width = wrap.offsetWidth;
-  canvas.height = wrap.offsetHeight;
-}
-resize();
-window.addEventListener('resize', resize);
+<!-- About Me Section -->
+<div align="center">
 
-const COLS = ['#6C63FF','#00D4FF','#00FF9D','#ffb74d','#f48fb1'];
-const particles = Array.from({length:70},()=>({
-  x: Math.random()*680, y: Math.random()*720,
-  r: Math.random()*1.6+0.3,
-  vx: (Math.random()-0.5)*0.45,
-  vy: (Math.random()-0.5)*0.45,
-  c: COLS[Math.floor(Math.random()*COLS.length)],
-  o: Math.random()*0.5+0.15,
-}));
+## 🌌 About Me
 
-let mouseX=340,mouseY=360;
-document.querySelector('.profile-wrap').addEventListener('mousemove',e=>{
-  const r=e.currentTarget.getBoundingClientRect();
-  mouseX=e.clientX-r.left; mouseY=e.clientY-r.top;
-});
+</div>
 
-function hexAlpha(hex,a){
-  const n=parseInt(hex.slice(1),16);
-  const r=(n>>16)&255,g=(n>>8)&255,b=n&255;
-  return `rgba(${r},${g},${b},${a})`;
-}
+```javascript
+const om = {
+  name:       "Om Khatri",
+  role:       "Full-Stack Developer Intern @ Nayoda",
+  location:   "India 🇮🇳",
+  learning:   ["Advanced MERN Stack", "DSA", "System Design", "Backend Architecture"],
+  askMeAbout: ["React.js", "Node.js", "MongoDB", "JWT Auth", "REST APIs"],
+  goals:      ["Master MERN Stack", "Build Production Apps", "Learn System Design"],
+  funFact:    "I turn ideas into real-world web applications ⚡"
+};
+```
 
-function draw(){
-  ctx.clearRect(0,0,canvas.width,canvas.height);
+<br/>
 
-  // grid
-  ctx.lineWidth=0.5;
-  for(let x=0;x<canvas.width;x+=44){
-    ctx.strokeStyle='rgba(108,99,255,0.05)';
-    ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,canvas.height);ctx.stroke();
-  }
-  for(let y=0;y<canvas.height;y+=44){
-    ctx.strokeStyle='rgba(108,99,255,0.05)';
-    ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(canvas.width,y);ctx.stroke();
-  }
+---
 
-  // mouse glow
-  const grd=ctx.createRadialGradient(mouseX,mouseY,0,mouseX,mouseY,160);
-  grd.addColorStop(0,'rgba(108,99,255,0.06)');
-  grd.addColorStop(1,'transparent');
-  ctx.fillStyle=grd;
-  ctx.fillRect(0,0,canvas.width,canvas.height);
+<!-- Tech Stack Section -->
+<div align="center">
 
-  // connections
-  for(let i=0;i<particles.length;i++){
-    for(let j=i+1;j<particles.length;j++){
-      const dx=particles[i].x-particles[j].x,dy=particles[i].y-particles[j].y;
-      const d=Math.sqrt(dx*dx+dy*dy);
-      if(d<90){
-        ctx.strokeStyle=`rgba(108,99,255,${0.15*(1-d/90)})`;
-        ctx.lineWidth=0.4;
-        ctx.beginPath();ctx.moveTo(particles[i].x,particles[i].y);
-        ctx.lineTo(particles[j].x,particles[j].y);ctx.stroke();
-      }
-    }
-  }
+## 🛠️ Tech Stack & Tools
 
-  // dots
-  particles.forEach(p=>{
-    p.x+=p.vx; p.y+=p.vy;
-    if(p.x<0)p.x=canvas.width; if(p.x>canvas.width)p.x=0;
-    if(p.y<0)p.y=canvas.height; if(p.y>canvas.height)p.y=0;
-    ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
-    ctx.fillStyle=hexAlpha(p.c,p.o);ctx.fill();
-  });
+</div>
 
-  requestAnimationFrame(draw);
-}
-draw();
+<div align="center">
 
-// ── Animate goal bars ───────────────────────────────────────────────
-setTimeout(()=>{
-  document.querySelectorAll('.goal-bar').forEach(b=>{
-    b.style.width=b.dataset.w+'%';
-  });
-},300);
+### 🎨 Frontend
+<p>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"/>
+</p>
 
-// ── Count-up stats ──────────────────────────────────────────────────
-function countUp(id,target,dur){
-  const el=document.getElementById(id);
-  let start=0;
-  const step=target/(dur/16);
-  const t=setInterval(()=>{
-    start+=step;
-    if(start>=target){el.textContent=target;clearInterval(t);}
-    else el.textContent=Math.floor(start);
-  },16);
-}
-setTimeout(()=>{
-  countUp('commits',432,1800);
-  countUp('repos',18,1200);
-  countUp('prs',64,1500);
-},500);
-</script>
-</body>
-</html>
+### ⚙️ Backend
+<p>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"/>
+  <img src="https://img.shields.io/badge/REST_API-FF6C37?style=for-the-badge&logo=postman&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white"/>
+</p>
+
+### 🗄️ Database & Cloud
+<p>
+  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
+</p>
+
+### 🔧 Dev Tools
+<p>
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+  <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white"/>
+</p>
+
+### 🧠 Languages & DSA
+<p>
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+</p>
+
+</div>
+
+---
+
+<!-- GitHub Stats Section -->
+<div align="center">
+
+## 📊 GitHub Analytics
+
+<table>
+  <tr>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api?username=omxkhatri&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=a78bfa&text_color=ffffff&count_private=true" alt="GitHub Stats"/>
+    </td>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=omxkhatri&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=ffffff" alt="Top Languages"/>
+    </td>
+  </tr>
+</table>
+
+<!-- Streak Stats -->
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=omxkhatri&theme=tokyonight&hide_border=true&background=0d1117&ring=a78bfa&fire=f472b6&currStreakLabel=a78bfa" alt="GitHub Streak"/>
+
+</div>
+
+---
+
+<!-- Trophies Section -->
+<div align="center">
+
+## 🏆 GitHub Trophies
+
+<img src="https://github-profile-trophy.vercel.app/?username=omxkhatri&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=7" alt="GitHub Trophies"/>
+
+</div>
+
+---
+
+<!-- Activity Graph -->
+<div align="center">
+
+## 📈 Contribution Graph
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=omxkhatri&bg_color=0d1117&color=a78bfa&line=7c3aed&point=f472b6&area=true&hide_border=true" alt="Contribution Graph"/>
+
+</div>
+
+---
+
+<!-- Current Goals / Progress Section -->
+<div align="center">
+
+## 🎯 Current Goals & Progress
+
+</div>
+
+| Goal | Status | Progress |
+|------|--------|----------|
+| 🔥 Master MERN Stack | In Progress | ![70%](https://progress-bar.xyz/70/?scale=100&title=MERN+Stack&width=200&color=7c3aed&suffix=%) |
+| 🧠 DSA & Problem Solving | In Progress | ![55%](https://progress-bar.xyz/55/?scale=100&title=DSA&width=200&color=a78bfa&suffix=%) |
+| 🏗️ System Design | Just Started | ![25%](https://progress-bar.xyz/25/?scale=100&title=System+Design&width=200&color=f472b6&suffix=%) |
+| 🚀 Production-Ready Apps | In Progress | ![60%](https://progress-bar.xyz/60/?scale=100&title=Production+Apps&width=200&color=7c3aed&suffix=%) |
+
+---
+
+<!-- What I'm Working On -->
+<div align="center">
+
+## 🔭 Currently Working On
+
+</div>
+
+<table align="center">
+  <tr>
+    <td align="center" width="200">
+      <img width="60" src="https://skillicons.dev/icons?i=react" /><br/>
+      <b>React.js Apps</b><br/>
+      <sub>Advanced Patterns</sub>
+    </td>
+    <td align="center" width="200">
+      <img width="60" src="https://skillicons.dev/icons?i=nodejs" /><br/>
+      <b>Node.js APIs</b><br/>
+      <sub>Scalable Backends</sub>
+    </td>
+    <td align="center" width="200">
+      <img width="60" src="https://skillicons.dev/icons?i=mongodb" /><br/>
+      <b>MongoDB</b><br/>
+      <sub>Schema Design</sub>
+    </td>
+    <td align="center" width="200">
+      <img width="60" src="https://skillicons.dev/icons?i=cpp" /><br/>
+      <b>DSA in C++</b><br/>
+      <sub>Competitive Coding</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
+<!-- Connect Section -->
+<div align="center">
+
+## 🌐 Let's Connect!
+
+<p>
+  <a href="https://linkedin.com/in/omxkhatri" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  &nbsp;
+  <a href="mailto:omxkhatri@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  &nbsp;
+  <a href="https://twitter.com/omxkhatri" target="_blank">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
+  </a>
+  &nbsp;
+  <a href="https://github.com/omxkhatri" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+  &nbsp;
+  <a href="https://instagram.com/omxkhatri" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+  </a>
+</p>
+
+</div>
+
+---
+
+<!-- Fun quote / Footer -->
+<div align="center">
+
+### 💬 Dev Quote of the Day
+
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote"/>
+
+<br/>
+
+<!-- Snake Contribution Animation -->
+### 🐍 My Contributions
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/omxkhatri/omxkhatri/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/omxkhatri/omxkhatri/output/github-contribution-grid-snake.svg"/>
+  <img alt="github-snake" src="https://raw.githubusercontent.com/omxkhatri/omxkhatri/output/github-contribution-grid-snake-dark.svg"/>
+</picture>
+
+<br/><br/>
+
+<!-- Footer Wave -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=120&section=footer&animation=fadeIn"/>
+
+<!-- Final message -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=A78BFA&center=true&vCenter=true&width=500&lines=Thanks+for+visiting!+%E2%AD%90;Let%27s+build+something+amazing+together+%F0%9F%9A%80;Open+for+collaborations+%F0%9F%A4%9D" alt="Footer Typing"/>
+
+</div>
