@@ -14,22 +14,23 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Generate GitHub metrics
         uses: lowlighter/metrics@latest
         with:
           user: Khatri-369
+          token: ${{ secrets.GITHUB_TOKEN }}
           template: classic
           base: header, activity, community, repositories
           config_display: large
           config_timezone: Asia/Kolkata
           config_padding: 10%
-          commits_authoring_threshold: 1%
-          github_api_quota: true
           output_action: commit
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          committer_name: github-metrics[bot]
-          committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+          commit_message: "Update GitHub metrics"
+          user_achievements: yes
+          repositories_batch: 100
 
       - name: Commit & Push
         run: |
